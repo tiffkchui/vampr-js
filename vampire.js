@@ -10,6 +10,8 @@ class Vampire {
 
   // Adds the vampire as an offspring of this vampire
   addOffspring(vampire) {
+    vampire.creator = this;
+    this.offspring.push(vampire);
 
   }
 
